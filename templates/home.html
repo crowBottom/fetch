@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+<div class="w3-container w3-margin">
+  <h3>List</h3>
+
+  <!-- list 1 -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">List Id 1</button>
+    <div id="demo" class="collapse">
+      <div class="conatainer">
+
+        <table class="table">
+        <thead>
+          <tr>
+            <th>List ID</th>
+            <th>Name</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for element in list %}
+          {% if element['name'] != None and element['listId'] == 1 %}
+          <tr>
+            <td>{{ element['listId'] }}</td>
+            <td>{{ element['name'] }}</td>
+            <td>{{ element['id'] }}</td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- list 2 -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo1">List Id 2</button>
+    <div id="demo1" class="collapse">
+      <div class="conatainer">
+
+        <table class="table">
+        <thead>
+          <tr>
+            <th>List ID</th>
+            <th>Name</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for element in list %}
+          {% if element['name'] != None and element['listId'] == 2 %}
+          <tr>
+            <td>{{ element['listId'] }}</td>
+            <td>{{ element['name'] }}</td>
+            <td>{{ element['id'] }}</td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- list 3 -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo2">List Id 3</button>
+    <div id="demo2" class="collapse">
+      <div class="conatainer">
+
+        <table class="table">
+        <thead>
+          <tr>
+            <th>List ID</th>
+            <th>Name</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for element in list %}
+          {% if element['name'] != None and element['listId'] == 3 %}
+          <tr>
+            <td>{{ element['listId'] }}</td>
+            <td>{{ element['name'] }}</td>
+            <td>{{ element['id'] }}</td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- list 4 -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo3">List Id 4</button>
+    <div id="demo3" class="collapse">
+      <div class="conatainer">
+
+        <table class="table">
+        <thead>
+          <tr>
+            <th>List ID</th>
+            <th>Name</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for element in list %}
+          {% if element['name'] != None and element['listId'] == 4 %}
+          <tr>
+            <td>{{ element['listId'] }}</td>
+            <td>{{ element['name'] }}</td>
+            <td>{{ element['id'] }}</td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
